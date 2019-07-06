@@ -10,17 +10,18 @@
 
 ## Endpoints 
 *	**Read**: https://us-central1-johnbalvin.cloudfunctions.net/phonebook_read
-  * Parameters(optional):  
+ * Parameters(optional):  
        *  **id**(string) the id of the user
 	  * Returning value:
 		   * **Content type**: application/json
 		   * **Body**: JSON representation of the user: id,name,address,phone_number
-	* Without parameters:
+ * Without parameters:
 		 * Returning value:
 		   * **Content type**: application/json
 		   * **Body**: JSON representation of all users users: id,name,address,phone_number up to 100 contacts
 	   
 *	**Create**: https://us-central1-johnbalvin.cloudfunctions.net/phonebook_create
+
   * **oAuth token**: ldfg08dsoas
   * Parameters:  
        *  **name**(string) the name of the user
@@ -31,6 +32,7 @@
 	   * **Body**: JSON representation of the user: id,name,address,phone_number
 	   
 *	**Update**: https://us-central1-johnbalvin.cloudfunctions.net/phonebook_update
+
   * **oAuth token**: kfgjyi79
   * Parameters:  
        *  **field**(string) what field you want to update (telephone,name,address)
@@ -39,6 +41,7 @@
        *  NONE
 
 *	**Delete**: https://us-central1-johnbalvin.cloudfunctions.net/phonebook_delete
+
   * **oAuth token**: kdsfpojui43
   * Parameters:  
        *  **id**(string) if from the contact you want to delete
@@ -56,4 +59,3 @@
  4.  Get credentials with [Google Cloud SDK](https://cloud.google.com/sdk)
  5. Run `go test -run TestCreateOK ` and `go test -run TestCreateFail`
  6. It should pass Go test
-
