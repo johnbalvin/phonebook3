@@ -9,44 +9,49 @@
 * write at least one unit test and a functional test  
 
 ## Endpoints 
+
 *	**Read**: https://us-central1-johnbalvin.cloudfunctions.net/phonebook_read
- * Parameters(optional):  
-       *  **id**(string) the id of the user
-	  * Returning value:
-		   * **Content type**: application/json
-		   * **Body**: JSON representation of the user: id,name,address,phone_number
- * Without parameters:
-		 * Returning value:
-		   * **Content type**: application/json
-		   * **Body**: JSON representation of all users users: id,name,address,phone_number up to 100 contacts
+
+	* Parameters(optional):  
+	*  **id**(string) the id of the user
+	* Returning value:
+		* **Content type**: application/json
+		* **Body**: JSON representation of the user: id,name,address,phone_number
+ 	* Without parameters:
+		* Returning value:
+			* **Content type**: application/json
+			* **Body**: JSON representation of all users users: id,name,address,phone_number up to 100 contacts
 	   
 *	**Create**: https://us-central1-johnbalvin.cloudfunctions.net/phonebook_create
 
-  * **oAuth token**: ldfg08dsoas
-  * Parameters:  
-       *  **name**(string) the name of the user
-	   *  **address**(string) the address of the user
-	   *  **telephone**(string) the telephone of the user
-  * Returning value:
-       * **Content type**: application/json
-	   * **Body**: JSON representation of the user: id,name,address,phone_number
+	* **oAuth token**: ldfg08dsoas
+	* Parameters:  
+		*  **name**(string) the name of the user
+		*  **address**(string) the address of the user
+		*  **telephone**(string) the telephone of the user
+	* Returning value:
+		* **Content type**: application/json
+		* **Body**: JSON representation of the user: id,name,address,phone_number
 	   
 *	**Update**: https://us-central1-johnbalvin.cloudfunctions.net/phonebook_update
 
-  * **oAuth token**: kfgjyi79
-  * Parameters:  
-       *  **field**(string) what field you want to update (telephone,name,address)
-	   *  **value**(string) new value assign to that field
-  * Returning value:
-       *  NONE
+	* **oAuth token**: kfgjyi79
+	* Parameters:  
+		*  **field**(string) what field you want to update (telephone,name,address)
+		*  **value**(string) new value assign to that field
+  	* Returning value:
+	
+       		*  NONE
 
 *	**Delete**: https://us-central1-johnbalvin.cloudfunctions.net/phonebook_delete
 
-  * **oAuth token**: kdsfpojui43
-  * Parameters:  
-       *  **id**(string) if from the contact you want to delete
-  * Returning value:
-       *  NONE
+	* **oAuth token**: kdsfpojui43
+  	* Parameters:  
+	
+       		*  **id**(string) if from the contact you want to delete
+  	* Returning value:
+	
+       		*  NONE
 	      
 ## Information
 
